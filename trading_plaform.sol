@@ -5,12 +5,14 @@ contract Test{
     address payable sellerAddr;
     address payable buyerAddr;
     address payable logisticsAddr;
+    address zeroAddr;
     uint deliveryFee;
     bool deliveringState;
     bool deliveredState;
     
     constructor() public payable{
         owner=msg.sender;
+        zeroAddr=0x0000000000000000000000000000000000000000;
         deliveringState=false;
         deliveredState=false;
     }
@@ -80,6 +82,27 @@ contract Test{
         }
         else{
             return "unsent";
+        }
+    }
+    
+    function showYourIdentity() public view returns(string memory){
+        if(msg.sender==zeroAddr){
+            return "zero address, you must connect to your wallet";
+        }
+        else if(msg.sender==buyerAddr){
+            return "you are the buyer";
+        }
+        else if(msg.sender==sellerAddr){
+            return "you are the seller";
+        }
+        else if(msg.sender==owner){
+            return "you are the contract provider";
+        }
+        else if(msg.sender==logisticsAddr){
+            return "you are the logistics";
+        }
+        else{
+            return "No Identity";
         }
     }
 }
