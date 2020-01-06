@@ -59,7 +59,7 @@ contract Test{
         return deliveryFee;
     }
     
-    function setCommodityPrice(uint price) public sellerOnly logisticsOnly{
+    function setCommodityPrice(uint price) public sellerOnly{
        commodityPrice=price;
     }
     
