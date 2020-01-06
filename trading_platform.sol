@@ -6,10 +6,10 @@ contract Test{
     address payable buyerAddr;
     address payable logisticsAddr;
     address zeroAddr;
-    uint deliveryFee=0;
+    uint deliveryFee;
     bool deliveringState;
     bool deliveredState;
-    uint commodityPrice=0;
+    uint commodityPrice;
     
     constructor() public payable{
         owner=msg.sender;
