@@ -6,9 +6,10 @@ contract Test{
     address payable buyerAddr;
     address payable logisticsAddr;
     address zeroAddr;
-    uint deliveryFee;
+    uint deliveryFee=0;
     bool deliveringState;
     bool deliveredState;
+    uint commodityPrice=0;
     
     constructor() public payable{
         owner=msg.sender;
@@ -49,11 +50,29 @@ contract Test{
         logisticsAddr=logistics;
     }
     
-    function setDeliveryFee(uint fee) public logisticsOnly{
+    function setDeliveryFee(uint fee) public  logisticsOnly{
         deliveryFee=fee;
     }
     
-    function placeAnOrder() public buyerOnly payable{
+     
+   function showDeliveryFee() public   buyerOnly view returns(uint){
+        return deliveryFee;
+    }
+    
+    function setCommodityPrice(uint price) public sellerOnly logisticsOnly{
+       commodityPrice=price;
+    }
+    
+    function showCommodityPrice() public   buyerOnly view returns(uint){
+        return commodityPrice;
+    }
+    
+    function PayCommodity() public buyerOnly payable{
+        require(msg.value==deliveryFee);
+    }
+    
+    function PayLogistics() public buyerOnly payable{
+        require(msg.value==commodityPrice);
     }
     
     function showBalance() public contractProviderOnly view returns(uint){
