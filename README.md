@@ -2,7 +2,12 @@
 ### Version 1.0 ###
 A smart contract which can be used in a transaction between a single buyer and a single seller.<br/>
 There are 4 roles: contract provider, buyer, seller and logistics.<br/>
-Every role has its own function access authorizations. 
+Every role has its own function access authorizations. <br/>
+### Version 2.0 : Concurrent multi-transaction ###
+Now the trading platform which is constructed with a smart contract has supported multi-transaction.<br/>
+When a contractProvider set a array which includes 3 addresses as parameters of function createTransaction(address[]), a new transaction will be created and the 3 parameters will be regarded as buyer address, seller address and logistics company address respectively (according to the sequence you give).<br/>
+If the function createTransaction(address[]) is called by a conctractProvider successfully, a new transaction will be created and it will not effect other transactions which already exist. 
+
 <br>
 <br>
 
