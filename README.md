@@ -17,8 +17,8 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 
 1.由Contract Provider決定誰是買家，誰是賣家和誰是物流公司([]sellerAddr(address),[]buyerAddr(address),[]logisticsAddr(address))<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/1.png)<br/><br/>
-![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/2.png)<br/><br/>
-三個為一組push進_accountAddress，_accountAddress[0]為buyerAddr，_accountAddress[1]為sellerAddr，logisticsAddr為accountAddress[1]
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/2.png)<br/><br/><br/><br/>
+三個為一組push進_accountAddress，_accountAddress[0]為buyerAddr，_accountAddress[1]為sellerAddr，logisticsAddr為accountAddress[1]<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/3.png))<br/><br/>
 2.賣家與物流分別有權限設定商品價格與物流費用(setCommodityPrice(uint),setDeliveryFee(uint))<br/><br/>
 3.買家可以查看物流費用(showDeliveryFee()),和商品費用(showCommodityPrice())<br/><br/>
