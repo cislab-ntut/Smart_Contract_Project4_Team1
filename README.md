@@ -23,7 +23,7 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/4.png)<br/><br/>
 3.買家可以查看物流費用(showDeliveryFee()),和商品費用(showCommodityPrice())<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/5.png)
-4.買家需要依據查詢到的金額分別支付物流費用（payLogistics(uint))和支付商品費用(payCommidity(uint))，這些錢先暫時存在合約中<br/><br/>
+4.買家需要依據查詢到的金額分別支付物流費用（payLogistics(uint))和支付商品費用(payCommidity(uint))，這些錢先暫時存在合約中<br/><br/><br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/7.png)<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/8.png)<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/0.png)<br/><br/>
