@@ -22,7 +22,7 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/2.png)<br/>
 所有Functions展示↑</br>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/3.png))<br/>
-1.由contractProvider（這裡是賬號1）決定誰是買家，誰是賣家和誰是物流公司(createTransaction(buyerAddress,sellerAddress,logisticsAddress)),提交後將生成一筆新的transaction。在這裡由於方便測試的需要，因為function有存取權限問題，我們在輸入時將同一筆transaction中買家買家與物流公司都設為同一個address<br/><br/>
+1.由contractProvider（這裡是賬號1）決定誰是買家，誰是賣家和誰是物流公司(createTransaction([buyerAddress,sellerAddress,logisticsAddress])),提交後將生成一筆新的transaction。在這裡由於方便測試的需要，因為function有存取權限問題，我們在輸入時將同一筆transaction中買家買家與物流公司都設為同一個address<br/><br/>
 2.賣家與物流公司分別有權限設定商品價格與物流費用(setCommodityPrice(uint),setDeliveryFee(uint))<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/4.png)<br/>
 賣家與物流公司設置商品價格及物流費用<br/><br/>
