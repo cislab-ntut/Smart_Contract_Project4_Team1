@@ -18,7 +18,7 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 1.由Contract Provider決定誰是買家，誰是賣家和誰是物流公司([]sellerAddr(address),[]buyerAddr(address),[]logisticsAddr(address))<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/1.png)<br/><br/>
 合約擁有者Address<br/><br/>
-![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/2.png)<br/><br/><br/><br/>
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/2.png)<br/><br/>
 輸入使用者身份<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/3.png))<br/><br/>
 使用者Address<br/><br/>
