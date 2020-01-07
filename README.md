@@ -27,8 +27,13 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/7.png)<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/8.png)<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/9.png)<br/><br/>
-                                         另一筆交易的物流費用和支付商品費用
-5.賣家可以確認發貨(delivering())，物流公司可以確認貨物已送達(delivered())，並從合約中領取到物流費用<br/><br/>
+                                         另一筆交易的物流費用和支付商品費用加起來總共11<br/><br/>
+5.賣家期使狀態為unset，當接到貨時可以按下(delivering())確認發貨，物流公司可以確認貨物已送達(delivered())，並從合約中領取到物流費用<br/><br/>
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/0.png)<br/><br/>
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/10.png)<br/><br/>
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/11.png)<br/><br/>
 6.買家確認商品沒問題後，選擇(receivingComfirm())確認收貨，合約中剩餘的貨款將轉賬到賣家賬戶<br/><br/>
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/12.png)<br/><br/>
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/13.png)<br/><br/>
 7.交易完成
 
