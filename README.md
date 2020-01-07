@@ -20,12 +20,12 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/1.png)<br/>
 首先查看VM中可用賬號（在這裡我們選用前兩個賬號進行測試，用第一個賬號部署合約作為contractProvider)<br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/2.png)<br/>
-所有Functions展示：</br>
+所有Functions展示↑</br>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/3.png))<br/>
 1.由Contract Provider決定誰是買家，誰是賣家和誰是物流公司(createTransaction(buyerAddress,sellerAddress,logisticsAddress)),提交後將生成一筆新的transaction<br/><br/>
-2.賣家與物流分別有權限設定商品價格與物流費用(setCommodityPrice(uint),setDeliveryFee(uint))<br/><br/>
+2.賣家與物流公司分別有權限設定商品價格與物流費用(setCommodityPrice(uint),setDeliveryFee(uint))<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/4.png)<br/>
-賣家設置費用<br/><br/>
+賣家與物流公司設置商品價格及物流費用<br/><br/>
 3.買家可以查看物流費用(showDeliveryFee()),和商品費用(showCommodityPrice())<br/><br/>
 ![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/5.png)<br/>
 買家查看物流費用和商品費用<br/><br/>
