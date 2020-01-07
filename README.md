@@ -13,7 +13,7 @@ If the function createTransaction(address[]) is called by a conctractProvider su
 
 # 系統流程 #
 
-![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/smart%20concract%20step/1-4-1.png)
+![img](https://github.com/cislab-yzu/Project1-4_Smart_contract/blob/master/SmartContractDemo/1-4-1.png)
 
 1.由Contract Provider決定誰是買家，誰是賣家和誰是物流公司(setBuyer(address),setSeller(address),setLogistics(address))<br/><br/>
 2.賣家與物流分別有權限設定商品價格與物流費用(setCommodityPrice(uint),setDeliveryFee(uint))<br/><br/>
